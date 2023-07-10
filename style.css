@@ -705,7 +705,13 @@ width: 50%;
     .about-crm__form-wrapper {
         margin: 0 auto;
     }
+
+    .map__right > div {
+        height: 100%;
+        top: 0;
+    }
 }
+
 
 
 @media all and (max-width: 1000px) {
