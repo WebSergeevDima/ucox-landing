@@ -43,7 +43,7 @@
                         </div>
                     </div>
                     <div class="header__block-right">
-                        <nav>
+                        <nav class="header__nav-desktop">
                             <ul class="header__nav">
                                 <li class="header__nav-li"><a href="#" class="header__nav-link">Главная</a></li>
                                 <li class="header__nav-li"><a href="#" class="header__nav-link">Услуги</a></li>
@@ -51,6 +51,18 @@
                                 <li class="header__nav-li"><a href="#" class="header__nav-link">Стоимости</a></li>
                             </ul>
                         </nav>
+                        <div class="header__nav-mobile">
+                            <input id="menu-toggle" type="checkbox"/>
+                            <label class='menu-button-container' for="menu-toggle">
+                                <div class='menu-button'></div>
+                            </label>
+                            <ul class="menu">
+                                <li class="header__nav-mobile-li"><a href="#" class="header__nav-mobile-link">Главная</a></li>
+                                <li class="header__nav-mobile-li"><a href="#" class="header__nav-mobile-link">Услуги</a></li>
+                                <li class="header__nav-mobile-li"><a href="#" class="header__nav-mobile-link">О компании</a></li>
+                                <li class="header__nav-mobile-li"><a href="#" class="header__nav-mobile-link">Стоимости</a></li>
+                            </ul>
+                        </div>
                     </div>
 
                 </div>
@@ -374,7 +386,8 @@
                         <h3 class="map__title">Доставка по городам России</h3>
                         <div class="map__description">
                             Доставку по городам России осуществляется через логистические компанию Байкал-Сервис.
-                            С ценами на доставку из Москвы до вашего городаааь вы можете ознакомится на сайте Байкал-Сервис
+                            С ценами на доставку из Москвы до вашего городаааь вы можете ознакомится на сайте
+                            Байкал-Сервис
                         </div>
                         <a href="#" class="map__btn">Перейти на сайт</a>
                     </div>
@@ -382,7 +395,7 @@
             </div>
             <div>
                 <div class="map__right">
-                    <div ></div>
+                    <div></div>
                 </div>
             </div>
         </div>
@@ -451,8 +464,178 @@
                 </div>
             </div>
         </div>
+
+
+        <div class="articles">
+            <div class="container">
+                <div class="articles__title">ВИДЫ ЛОГИСТИК КАРГО ДОСТАВКИ</div>
+
+                <div class="articles__items">
+                    <div>
+                        <div class="articles__item">
+                            <div style="background: url(images/article1.png); background-position: center; background-size: cover;">
+                                <div class="articles__item-date">
+                                    <div>
+                                        <span class="articles__item-date-day">12</span>
+                                        <br/>
+                                        MAY
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="articles__item-title">БЫСТРОЕ АВТО</div>
+                                <div class="articles__item-description">
+                                    Мы предоставляем вам экспресс линии с сроками 10-15 дней и 18-24 дня, с ставкой от
+                                    2,3$/кг. Так же есть специальные условия для сумок и рюкзаков.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="articles__item">
+                            <div style="background: url(images/article1.png); background-position: center; background-size: cover;">
+                                <div class="articles__item-date">
+                                    <div>
+                                        <span class="articles__item-date-day">12</span>
+                                        <br/>
+                                        MAY
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="articles__item-title">БЕЛАЯ ДОСТАВКА</div>
+                                <div class="articles__item-description">
+                                    Через наше карго Вы можете оформить “Белый ввоз” продукции, так как мы предоставляем
+                                    услуги брокера и поможем с расстаможкой. Срок доставки 20-30 дней.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="articles__item">
+                            <div style="background: url(images/article1.png); background-position: center; background-size: cover;">
+                                <div class="articles__item-date">
+                                    <div>
+                                        <span class="articles__item-date-day">12</span>
+                                        <br/>
+                                        MAY
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="articles__item-title">АВИА - ДОСТАВКА</div>
+                                <div class="articles__item-description">
+                                    Для тех, кто спешит получить свой товар. Наша компания занимается отправкой вашего
+                                    товара самолетом каждый вторник и пятницу. Срок доставки от 2 до 7 дней.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="articles__item">
+                            <div style="background: url(images/article1.png); background-position: center; background-size: cover;">
+                                <div class="articles__item-date">
+                                    <div>
+                                        <span class="articles__item-date-day">12</span>
+                                        <br/>
+                                        MAY
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="articles__item-title">КОНТЕЙНЕРНЫЕ ОТПРАВКИ</div>
+                                <div class="articles__item-description">
+                                    Если у вас большие объемы груза, то мы предлагаем вам арендовать контейнер вместе с
+                                    расстаможкой прямым маршрутом к вам на склад в любую точку России!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
+
+
+    <footer class="footer">
+        <div class="footer-top__wrapper">
+            <div class="container">
+                <div class="footer-top">
+                    <div>
+                        <div class="footer-top__title"><img src="./images/logo.png" class="footer-top__title-logo" alt=""></div>
+                        <div class="footer-top__description">
+                            Откройте двери китайского рынка с нашей CRM системой для логистики и закупок.
+                            <br/>
+                            Управляйте, оптимизируйте, экономьте - все в одном мощном инструменте!
+                            Получайте детальные отчеты и знайте, где находится ваш груз.
+                        </div>
+                    </div>
+                    <div>
+                        <div class="footer-top__title"><div class="footer-top__title-text">НАВИГАЦИЯ</div></div>
+                        <div>
+                            <ul class="footer__nav">
+                                <li><a href="#" class="footer__nav-link">Главная</a></li>
+                                <li><a href="#" class="footer__nav-link">Услуги</a></li>
+                                <li><a href="#" class="footer__nav-link">О компании</a></li>
+                                <li><a href="#" class="footer__nav-link">Стоимости</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="footer-top__title"><div class="footer-top__title-text">АДРЕСА НАШИХ СКЛАДОВ</div></div>
+
+                        <div class="footer-top__addr">
+                            <div>
+                                Склад в городе Иу:浙江省金华市义乌市苏溪镇民生路32号鼎客电商园斯塔特物流有限公司1FA1。
+                                联系人：许小雷 13391999617。
+                            </div>
+                            <div>
+                                Склад “Южные ворота”: Москва, 19 км МКАД вл.20, стр.1
+                            </div>
+                        </div>
+
+                        <div class="footer-top__addr">
+                            <div>
+                                Склад в городе Гуанчжоу:广州市荔湾区冲口街道接龙里6号斯塔特中俄物流。许小雷 13391999617.
+                            </div>
+                            <div>
+                                Склад “ТЯК Люблино”: Москва, ул. Тихорецкий бульвар, 1
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom__wrapper">
+
+            <div class="container">
+                <div class="footer-bottom">
+                    <div>COPYRIGHT 2023 | UCOX</div>
+                    <div>
+                        <div class="footer__social">
+                            <a href="#">
+                                <svg fill="#000000" width="16px" height="16px" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M228.646,34.7676a11.96514,11.96514,0,0,0-12.21778-2.0752L31.87109,105.19729a11.99915,11.99915,0,0,0,2.03467,22.93457L84,138.15139v61.833a11.8137,11.8137,0,0,0,7.40771,11.08593,12.17148,12.17148,0,0,0,4.66846.94434,11.83219,11.83219,0,0,0,8.40918-3.5459l28.59619-28.59619L175.2749,217.003a11.89844,11.89844,0,0,0,7.88819,3.00195,12.112,12.112,0,0,0,3.72265-.59082,11.89762,11.89762,0,0,0,8.01319-8.73925L232.5127,46.542A11.97177,11.97177,0,0,0,228.646,34.7676ZM32.2749,116.71877a3.86572,3.86572,0,0,1,2.522-4.07617L203.97217,46.18044,87.07227,130.60769,35.47461,120.28811A3.86618,3.86618,0,0,1,32.2749,116.71877Zm66.55322,86.09375A3.99976,3.99976,0,0,1,92,199.9844V143.72048l35.064,30.85669ZM224.71484,44.7549,187.10107,208.88772a4.0003,4.0003,0,0,1-6.5415,2.10937l-86.1543-75.8164,129.66309-93.645A3.80732,3.80732,0,0,1,224.71484,44.7549Z"/>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg fill="#000000" width="16px" height="16px" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M228.646,34.7676a11.96514,11.96514,0,0,0-12.21778-2.0752L31.87109,105.19729a11.99915,11.99915,0,0,0,2.03467,22.93457L84,138.15139v61.833a11.8137,11.8137,0,0,0,7.40771,11.08593,12.17148,12.17148,0,0,0,4.66846.94434,11.83219,11.83219,0,0,0,8.40918-3.5459l28.59619-28.59619L175.2749,217.003a11.89844,11.89844,0,0,0,7.88819,3.00195,12.112,12.112,0,0,0,3.72265-.59082,11.89762,11.89762,0,0,0,8.01319-8.73925L232.5127,46.542A11.97177,11.97177,0,0,0,228.646,34.7676ZM32.2749,116.71877a3.86572,3.86572,0,0,1,2.522-4.07617L203.97217,46.18044,87.07227,130.60769,35.47461,120.28811A3.86618,3.86618,0,0,1,32.2749,116.71877Zm66.55322,86.09375A3.99976,3.99976,0,0,1,92,199.9844V143.72048l35.064,30.85669ZM224.71484,44.7549,187.10107,208.88772a4.0003,4.0003,0,0,1-6.5415,2.10937l-86.1543-75.8164,129.66309-93.645A3.80732,3.80732,0,0,1,224.71484,44.7549Z"/>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg fill="#000000" width="16px" height="16px" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M228.646,34.7676a11.96514,11.96514,0,0,0-12.21778-2.0752L31.87109,105.19729a11.99915,11.99915,0,0,0,2.03467,22.93457L84,138.15139v61.833a11.8137,11.8137,0,0,0,7.40771,11.08593,12.17148,12.17148,0,0,0,4.66846.94434,11.83219,11.83219,0,0,0,8.40918-3.5459l28.59619-28.59619L175.2749,217.003a11.89844,11.89844,0,0,0,7.88819,3.00195,12.112,12.112,0,0,0,3.72265-.59082,11.89762,11.89762,0,0,0,8.01319-8.73925L232.5127,46.542A11.97177,11.97177,0,0,0,228.646,34.7676ZM32.2749,116.71877a3.86572,3.86572,0,0,1,2.522-4.07617L203.97217,46.18044,87.07227,130.60769,35.47461,120.28811A3.86618,3.86618,0,0,1,32.2749,116.71877Zm66.55322,86.09375A3.99976,3.99976,0,0,1,92,199.9844V143.72048l35.064,30.85669ZM224.71484,44.7549,187.10107,208.88772a4.0003,4.0003,0,0,1-6.5415,2.10937l-86.1543-75.8164,129.66309-93.645A3.80732,3.80732,0,0,1,224.71484,44.7549Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div>TERM OF USE | MADE BY UCOX</div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </div>
 </body>
