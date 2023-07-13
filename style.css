@@ -670,7 +670,8 @@ body {
 .map__wrapper-title {
     color: #000000;
     font-weight: bold;
-    margin-top: 130px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     text-align: center;
     font-size: 24px;
 }
@@ -703,7 +704,7 @@ body {
 
 .articles__title {
     font-weight: bold;
-    margin-top: 130px;
+    margin-top: 100px;
     text-align: center;
     font-size: 24px;
 }
@@ -1230,7 +1231,8 @@ body {
 
 .calculate__title {
     font-weight: bold;
-    margin-top: 130px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     text-align: center;
     font-size: 24px;
 }
