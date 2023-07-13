@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
            });
 
             if(isResult) {
-                result = (weight / ((length * width * height) / 1000000)).toFixed(1);
+                result = Math.floor(weight / ((length * width * height) / 1000000));
                 resultInput.value = result;
             } else {
                 resultInput.value = 0;
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
             });
 
             if(isResult) {
-                result = (weight2 / volume).toFixed(1);
+                result = Math.floor(weight2 / volume);
                 resultInput.value = result;
             } else {
                 resultInput.value = 0;
