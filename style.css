@@ -1066,22 +1066,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .feedback {
     background: #00c0e2;
     margin: 0 auto;
@@ -1130,11 +1114,6 @@ body {
 }
 
 
-
-
-
-
-
 .footer-feedback__wrapper {
     background: #00c0e2;
     padding: 50px;
@@ -1175,15 +1154,6 @@ body {
     font-weight: bold;
     font-size: 20px;
 }
-
-
-
-
-
-
-
-
-
 
 
 .calculate {
@@ -1262,6 +1232,7 @@ h4.calculate__left-title {
     justify-content: center;
     margin: 0 -10px;
 }
+
 .calculate__inputs > div {
     margin: 0 10px;
     text-align: center;
@@ -1283,7 +1254,7 @@ h4.calculate__left-title {
 .calculate__result-title {
     color: #ffffff;
     font-size: 20px;
-   padding-right: 20px;
+    padding-right: 20px;
 }
 
 .calculate__result-input {
@@ -1320,6 +1291,7 @@ h4.calculate__left-title {
 .calculate-table tr:nth-child(odd) td {
     background: #ffffff;
 }
+
 .calculate-table tr:nth-child(even) td {
     background: #f5f5f5;
 }
@@ -1331,6 +1303,7 @@ h4.calculate__left-title {
 .calculate-table tr:nth-child(even) td:first-child {
     background: #0097af;
 }
+
 .calculate-table tr:nth-child(odd) td:first-child {
     background: #00c6e5;
 }
@@ -1338,9 +1311,6 @@ h4.calculate__left-title {
 .calculate-table tr td {
     height: 35px;
 }
-
-
-
 
 
 .calculate-table {
@@ -1375,8 +1345,8 @@ h4.calculate__left-title {
 
 .calculate-table-header__table-title {
     border: 1px #d8d8d8 solid;
-    background: rgb(1,118,131);
-    background: linear-gradient(0deg, rgba(1,118,131,1) 0%, rgba(40,227,254,1) 100%, rgba(25,87,178,1) 100%);
+    background: rgb(1, 118, 131);
+    background: linear-gradient(0deg, rgba(1, 118, 131, 1) 0%, rgba(40, 227, 254, 1) 100%, rgba(25, 87, 178, 1) 100%);
     color: #fff;
     font-weight: bold;
     text-align: center;
@@ -1414,10 +1384,54 @@ h4.calculate__left-title {
 }
 
 
-
-#services {
-    scroll-padding-top: 200px;
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: flex-end;
 }
+
+.modal-content {
+    background-color: #fff;
+    margin: 0px auto 130px auto;
+    padding: 20px;
+    width: 50%;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.tooltip-img {
+    display: none;
+}
+
+[data-tooltip="img"].active .tooltip-img {
+    display: block;
+}
+
+[data-tooltip="img"] {
+    position: relative;
+}
+
+[data-tooltip="img"] .tooltip-img {
+    position: absolute;
+    left: -60px;
+    top: -158px;
+}
+
+[data-tooltip="img"] .tooltip-img img {
+    width: 150px;
+    height: 150px;
+    min-width: 150px;
+    min-height: 150px;
+}
+
 
 @media all and (max-width: 1100px) {
 
@@ -1454,18 +1468,19 @@ h4.calculate__left-title {
     .articles__item > div:first-child {
         width: 320px;
     }
+
     .calculate {
         flex-direction: column;
     }
 
     .calculate > div:first-child,
-    .calculate > div:last-child{
+    .calculate > div:last-child {
         width: 100%;
     }
 
     .calculate > div:first-child {
-    margin-bottom: 40px;
-}
+        margin-bottom: 40px;
+    }
 }
 
 
@@ -1517,9 +1532,11 @@ h4.calculate__left-title {
     .footer-top > div:nth-child(3) {
         width: 100%;
     }
+
     .footer-top {
         margin: 0 -60px;
     }
+
     .footer-top > div {
         padding: 0 20px;
         margin: 0;
@@ -1532,6 +1549,7 @@ h4.calculate__left-title {
     .footer-feedback > div {
         margin: 10px 0px;
     }
+
     .footer-feedback__btn {
         width: 280px;
         font-size: 14px;
@@ -1556,6 +1574,7 @@ h4.calculate__left-title {
         padding: 0;
         width: 100%;
     }
+
     .feedback__btn {
         width: 100%;
     }
@@ -1563,6 +1582,7 @@ h4.calculate__left-title {
     .feedback {
         padding: 40px 30px;
     }
+
     .calculate__inputs {
         flex-wrap: wrap;
     }

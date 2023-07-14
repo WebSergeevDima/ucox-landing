@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', ()=> {
+document.addEventListener('DOMContentLoaded', () => {
 
     const calculateIni = () => {
 
@@ -33,25 +33,25 @@ document.addEventListener('DOMContentLoaded', ()=> {
                 e.currentTarget.value = e.currentTarget.value.replace(/[^\d.]/g, '');
 
                 calcInputsLong.forEach(input => {
-                    if(!input.value) {
+                    if (!input.value) {
                         isResult = false;
                     }
 
-                    if(input.name === 'length') {
+                    if (input.name === 'length') {
                         length = input.value;
                     }
-                    if(input.name === 'width') {
+                    if (input.name === 'width') {
                         width = input.value;
                     }
-                    if(input.name === 'height') {
+                    if (input.name === 'height') {
                         height = input.value;
                     }
-                    if(input.name === 'weight') {
+                    if (input.name === 'weight') {
                         weight = input.value;
                     }
                 });
 
-                if(isResult) {
+                if (isResult) {
                     result = Math.floor(weight / ((length * width * height) / 1000000));
                     resultInput.value = result;
                 } else {
@@ -59,7 +59,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
                 }
             })
         });
-
 
 
         calcInputsShort.forEach(item => {
@@ -75,19 +74,19 @@ document.addEventListener('DOMContentLoaded', ()=> {
                 e.currentTarget.value = e.currentTarget.value.replace(/[^\d.]/g, '');
 
                 calcInputsShort.forEach(input => {
-                    if(!input.value) {
+                    if (!input.value) {
                         isResult = false;
                     }
 
-                    if(input.name === 'volume') {
+                    if (input.name === 'volume') {
                         volume = input.value;
                     }
-                    if(input.name === 'weight2') {
+                    if (input.name === 'weight2') {
                         weight2 = input.value;
                     }
                 });
 
-                if(isResult) {
+                if (isResult) {
                     result = Math.floor(weight2 / volume);
                     resultInput.value = result;
                 } else {
@@ -113,10 +112,25 @@ document.addEventListener('DOMContentLoaded', ()=> {
                 window.scrollTo({top: y, behavior: 'smooth'});
 
             });
-        };
+        }
+
+    }
+
+    const toggleTooltip = () => {
+
+        document.querySelectorAll('[data-tooltip="img"]').forEach((item) => {
+
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                item.classList.toggle('active');
+            });
+
+        });
+
     }
 
     calculateIni();
     scrollTo();
+    toggleTooltip();
 
 });
