@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', ()=> {
 
+
+
     const calcInputsLong = document.querySelectorAll('.js-calculate__input-long');
     const calcInputsShort = document.querySelectorAll('.js-calculate__input-short');
     const resultInput = document.querySelector('[name="result"]');
@@ -93,6 +95,25 @@ document.addEventListener('DOMContentLoaded', ()=> {
             }
         })
     });
+
+
+
+
+    const smoothLinks = document.querySelectorAll('a[href^="#"]');
+
+    for (let smoothLink of smoothLinks) {
+        smoothLink.addEventListener('click', function (e) {
+
+            e.preventDefault();
+            const element = document.querySelector(smoothLink.getAttribute('href'));
+            const yOffset = -200;
+            const pageYOffset = window.pageYOffset | document.body.scrollTop;
+            const y = element.getBoundingClientRect().top + pageYOffset + yOffset;
+
+           window.scrollTo({top: y, behavior: 'smooth'});
+
+        });
+    };
 
 
 });
